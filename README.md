@@ -16,7 +16,7 @@
 ##  提示 可以使用任意的数组类型传入，通过up = true参数可以调整数组排序方式
 ```C++
 #include<iostream>
-#include"sortlib.h"
+#include"sort.h"
 Sort sort;
 int main()
 {
