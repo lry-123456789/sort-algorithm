@@ -14,3 +14,25 @@
 |shellSoet|&#10004;|&#10004;|
 
 ##  提示 可以使用任意的数组类型传入，通过up = true参数可以调整数组排序方式
+```C++
+#include<iostream>
+#include"sortlib.h"
+Sort sort;
+int main()
+{
+	int a[] = { 1,5,3,4 };
+	sort.bubbleSort(a, false);            //以冒泡排序为例，第一个参数为数组传入参数，第二个参数传入为升序或降序(false 降序,true升序)
+	//sort.countingSort(a, false);
+	//sort.heapSort(a, false);
+	//sort.insertionSort(a, false);
+	//sort.mergeSort(a, false);
+	//sort.quickSort(a, false);
+	//sort.radixSort(a, false);
+	//sort.selectionSort(a, false);
+	//sort.shellSort(a, false);
+	for (auto i = 0; i < sort.get_array_length(a); i++)
+	{
+		std::cout << a[i] << std::endl;
+	}
+}
+```
