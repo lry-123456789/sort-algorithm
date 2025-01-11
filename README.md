@@ -16,11 +16,11 @@
 ##  提示 可以使用任意的数组类型传入，通过up = true参数可以调整数组排序方式
 ```C++
 #include<iostream>
-#include"sort.h"
+#include"sortlib.h"
 Sort sort;
 int main()
 {
-	int a[] = { 1,5,3,4 };
+	auto a[] = { 1,5,3,4 };
 	sort.bubbleSort(a, false);            //以冒泡排序为例，第一个参数为数组传入参数，第二个参数传入为升序或降序(false 降序,true升序)
 	//sort.countingSort(a, false);
 	//sort.heapSort(a, false);
@@ -36,3 +36,5 @@ int main()
 	}
 }
 ```
+## 注意
+启用上述方案时，auto a[]={1,5,3,4}仅在clang++上可用，auto关键字仅在C++11以及以上版本中可用，添加-std=c++11可以支持c++11
